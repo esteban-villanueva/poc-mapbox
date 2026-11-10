@@ -18,7 +18,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-neutral-950 text-white p-6">
       <header className="max-w-7xl mx-auto mb-6">
-        <h1 className="text-2xl font-bold">PoC Agro: Trazado de Lotes</h1>
+        <h1 className="text-2xl font-bold">PoC: Trazado de Lotes</h1>
         <p className="text-neutral-400 text-sm">
           Mapbox GL Draw + Turf.js + PostGIS
         </p>

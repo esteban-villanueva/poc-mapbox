@@ -9,12 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@mapbox/mapbox-gl-draw": "^1.5.2",
+    "@turf/area": "^7.4.0",
+    "mapbox-gl": "^3.34.2",
     "next": "16.4.5",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
+    "@types/mapbox__mapbox-gl-draw": "^1.4.9",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

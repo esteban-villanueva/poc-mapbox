@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: postgis_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: gisdb
+      POSTGRES_USER: gisuser
+      POSTGRES_PASSWORD: gispassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  postgres_data:
+
